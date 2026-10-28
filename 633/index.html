@@ -155,9 +155,9 @@ a{color:inherit}
 /* faq */
 .faq{border-top:1px solid var(--rule-bone);max-width:900px}
 .faq details{border-bottom:1px solid var(--rule-bone);padding:0}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:22px 0;font-size:20px;font-weight:600}
+.faq summary{list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px 12px;align-items:center;padding:22px 0;font-size:20px;font-weight:600}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font-family:var(--display);font-size:28px;line-height:1}
+.faq summary::after{margin-left:auto;content:"+";font-family:var(--display);font-size:28px;line-height:1}
 .faq details[open] summary::after{content:"–"}
 .faq p{margin:0 0 22px;color:var(--soft-ink);max-width:720px}
 
@@ -178,99 +178,24 @@ a{color:inherit}
   <div class="wrap header-inner">
     <a class="brand" href="../" aria-label="Incredible Man home"><span class="brand-mark">iM</span><span class="brand-name"><span class="full">INCREDIBLE MAN</span><span class="short">633 MEN</span></span></a>
     <nav class="nav" aria-label="633 Men">
-      <a href="#saturday">A Saturday</a>
-      <a href="#first-time">Your first time</a>
-      <a href="#groups">Groups</a>
-      <a href="#lead">Lead a group</a>
-      <a class="btn btn-gold" href="#raise">Raise your hand</a>
+      <a href="#groups">Find a group</a>
+      <a href="#faq">Questions</a>
+      <a class="btn btn-gold" href="mailto:dustin@incredibleman.org?subject=633%20Men">Raise your hand</a>
     </nav>
-    <div class="nav-short"><a class="btn btn-gold" href="#raise">Raise your hand</a></div>
+    <div class="nav-short"><a class="btn btn-gold" href="mailto:dustin@incredibleman.org?subject=633%20Men">Raise your hand</a></div>
   </div>
 </header>
 
 <main>
-  <section class="hero" id="top">
+  <section class="section" id="groups" aria-labelledby="groups-title" style="padding-top:clamp(40px,6vw,72px)">
     <div class="wrap">
       <a class="crumb" href="../#gather">← Incredible Man · Gather</a>
-      <div class="hero-grid">
-        <h1><span class="big">633 Men</span><span class="small">Saturdays · 6:33 AM</span></h1>
+      <div class="section-head" style="margin-top:18px">
         <div>
-          <p class="serif">We weren’t built to do this alone.</p>
-          <p class="hero-lead">A workout, a devotion and real conversation. Any man, anywhere, can find a group and join.</p>
+          <h1 class="display" id="groups-title" style="font-size:var(--h2);line-height:.92">633 Men</h1>
+          <p class="tag" style="margin:14px 0 0;color:var(--gold)">Saturdays · 6:33 AM</p>
         </div>
-      </div>
-      <div class="hero-cta">
-        <a class="btn btn-gold" href="#raise">Raise your hand <span aria-hidden="true">→</span></a>
-        <a class="btn btn-line" href="#saturday">See a Saturday</a>
-      </div>
-      <div class="hero-photo"><span class="tag">Photo to come</span><span>First light. About twenty men in a loose circle on wet grass, breath visible, some with hands on knees after the workout.</span></div>
-    </div>
-  </section>
-
-  <section class="section" id="saturday" aria-labelledby="saturday-title" style="border-top:1px solid #23262E">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 class="display h2" id="saturday-title">A Saturday</h2>
-        <p>We do a hard thing together first. It opens the heart for what comes after.</p>
-      </div>
-      <ol class="steps">
-        <li class="step">
-          <span class="time">6:33</span>
-          <div><h3 class="display h3">The workout</h3><p>A bodyweight workout in the park. Every fitness level. Nobody finishes alone.</p></div>
-          <div class="shot"><span class="tag">Photo to come</span><span>Push-ups on wet grass.</span></div>
-        </li>
-        <li class="step">
-          <span class="time"><span class="tbd">Time</span></span>
-          <div><h3 class="display h3">The devotion</h3><p>We open scripture together. It gives us words for things most men don’t know how to say.</p></div>
-          <div class="shot"><span class="tag">Photo to come</span><span>Bibles open on a tailgate.</span></div>
-        </li>
-        <li class="step">
-          <span class="time"><span class="tbd">Time</span></span>
-          <div><h3 class="display h3">Real conversation</h3><p>Men share where they actually are this week. It’s incredible how much we have in common.</p></div>
-          <div class="shot"><span class="tag">Photo to come</span><span>Men on a stone wall with coffee, talking.</span></div>
-        </li>
-        <li class="step">
-          <span class="time"><span class="tbd">Time</span></span>
-          <div><h3 class="display h3">Prayer in pairs</h3><p>Every man is paired with a brother to pray for, one on one.</p></div>
-          <div class="shot"><span class="tag">Photo to come</span><span>Two men, heads bowed, a hand on a shoulder.</span></div>
-        </li>
-        <li class="step">
-          <span class="time">After</span>
-          <div><h3 class="display h3">Go home carrying something</h3><p>On the way home, men pick up breakfast for their kids and flowers for their wives.</p></div>
-          <div class="shot"><span class="tag">Photo to come</span><span>Flowers on a passenger seat.</span></div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="verse" aria-label="Scripture">
-    <div class="wrap">
-      <blockquote class="serif">“Two are better than one… For if they fall, one will lift up his fellow. But woe to him who is alone when he falls and has not another to lift him up!”<cite>ECCLESIASTES 4:9–10</cite></blockquote>
-    </div>
-  </section>
-
-  <section class="section bone" id="first-time" aria-labelledby="first-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 class="display h2" id="first-title">Your first time</h2>
-        <p>Doesn’t matter if you’ve never been or you’ve been around for years. There’s a place for you.</p>
-      </div>
-      <div class="expect">
-        <div><h3>You never have to say a word</h3><p>Plenty of men just listen. Share when you’re ready, or not at all.</p></div>
-        <div><h3>They’ll learn your name</h3><p>From the first Saturday, men will ask your name and want to hear your story.</p></div>
-        <div><h3>Every fitness level</h3><p>The workout scales to you. Show up as you are.</p></div>
-        <div><h3>Someone will notice</h3><p>If a brother seems off, someone will quietly ask if he’s okay.</p></div>
-        <div><h3>It’s free</h3><p>Monthly partners cover the cost of every 633 Men group.</p></div>
-        <div><h3>What to bring <span class="tbd">To decide</span></h3><p>Water, workout clothes, and [anything else Pastor D wants men to bring].</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="groups" aria-labelledby="groups-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 class="display h2" id="groups-title">Find a group</h2>
-        <p>The vision is simple: any man, anywhere, can find a group and join.</p>
+        <p>A workout, a devotion and real conversation. Any man, anywhere, can find a group and join.</p>
       </div>
       <div class="groups-grid">
         <div class="map" role="img" aria-label="Concept map showing one group near Austin and men who have raised their hand elsewhere in Texas">
@@ -297,54 +222,10 @@ a{color:inherit}
             <span class="tag" style="color:var(--quiet-on-night)">Not near you yet?</span>
             <span class="name">Raise your hand</span>
             <p>Tell us where you are. When enough men nearby raise a hand, we help one of you start a group.</p>
-            <p style="margin-top:10px"><a class="btn btn-gold" href="#raise">Raise your hand</a></p>
+            <p style="margin-top:10px"><a class="btn btn-gold" href="mailto:dustin@incredibleman.org?subject=633%20Men">Raise your hand</a></p>
+            <p style="font-size:13px;color:var(--quiet-on-night)">Concept only: for now this opens an email to Pastor D.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section gold" id="raise" aria-labelledby="raise-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 class="display h2" id="raise-title">Raise your hand</h2>
-        <p>Most men don’t show up because of a website. They show up because they told somebody they would. Tell us.</p>
-      </div>
-      <div class="how">
-        <div><span class="n">1</span><h3>Raise your hand</h3><p>Say whether you want to join a group or start one, and where you live.</p></div>
-        <div><span class="n">2</span><h3>A real person follows up</h3><p>Someone from 633 Men reaches out to you personally. <span class="tbd">Who, and how fast</span></p></div>
-        <div><span class="n">3</span><h3>A group forms near you</h3><p>When enough men nearby raise a hand, one of them is equipped to lead. <span class="tbd">How many</span></p></div>
-      </div>
-      <form class="form" onsubmit="return false" aria-describedby="form-note">
-        <label>First name<input type="text" name="name" autocomplete="given-name" disabled></label>
-        <label>ZIP code<input type="text" name="zip" inputmode="numeric" autocomplete="postal-code" disabled></label>
-        <label class="full">Email or phone<input type="text" name="contact" disabled></label>
-        <fieldset class="choice full" disabled>
-          <legend>I want to</legend>
-          <label><input type="radio" name="intent" checked> Join a group</label>
-          <label><input type="radio" name="intent"> Start a group</label>
-        </fieldset>
-        <div class="full" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
-          <button class="btn btn-gold" type="submit" disabled style="opacity:.55;cursor:not-allowed">Raise my hand</button>
-          <p class="form-note" id="form-note">Concept only: this form doesn’t send anything yet. For now, email <a href="mailto:dustin@incredibleman.org?subject=633%20Men">dustin@incredibleman.org</a>.</p>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <section class="section" id="lead" aria-labelledby="lead-title">
-    <div class="wrap">
-      <div class="section-head">
-        <h2 class="display h2" id="lead-title">Lead a group</h2>
-        <p>You don’t need to be a pastor or a coach. You need to show up every Saturday and care about the men next to you.</p>
-      </div>
-      <div class="kit">
-        <div><h3>The Saturday format</h3><p>Workout, devotion, conversation, prayer in pairs. The same rhythm every week.</p></div>
-        <div><h3>The seven pillars</h3><p>Small group study materials built on the seven pillars, so any man can lead other men. <span class="tbd">Coming</span></p></div>
-        <div><h3>Your first Saturday</h3><p>A simple checklist for picking a park, inviting men and running week one. <span class="tbd">To write</span></p></div>
-        <div><h3>The 633 Men app</h3><p>Planned for 2027, so groups can launch anywhere and men can find them.</p></div>
-        <div><h3>Support from Pastor D</h3><p>Leaders aren’t on their own. <span class="tbd">What support looks like</span></p></div>
-        <div><h3>Ready to start?</h3><p><a href="#raise">Raise your hand</a> and choose “Start a group.”</p></div>
       </div>
     </div>
   </section>
@@ -362,17 +243,6 @@ a{color:inherit}
         <details><summary>Do I have to be a Christian? <span class="tbd">To decide</span></summary><p>[Pastor D’s answer on who is welcome, and how faith is part of the morning.]</p></details>
         <details><summary>What if it rains? <span class="tbd">To decide</span></summary><p>[Weather plan.]</p></details>
         <details><summary>Is it connected to a church? <span class="tbd">To decide</span></summary><p>[How groups relate to local churches.]</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section class="section gold close" aria-label="Closing">
-    <div class="wrap">
-      <p class="display">Do me a favor. Text one guy and bring him with you.</p>
-      <p class="serif">With you in the fight, Pastor D</p>
-      <div class="row">
-        <a class="btn btn-dark" href="#raise">Raise your hand</a>
-        <a class="btn" href="../" style="border:1px solid var(--night);color:var(--night)">Back to Incredible Man</a>
       </div>
     </div>
   </section>
