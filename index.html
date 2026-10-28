@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Incredible Man · Design Preview</title>
+<meta name="description" content="A design preview of the Incredible Man homepage, for Pastor Dustin Sample's review.">
+<meta property="og:title" content="Incredible Man · Design Preview">
+<meta property="og:description" content="Awaken the man God created you to be. A proposed new homepage for review.">
+<meta property="og:image" content="https://i.ytimg.com/vi/2KZJzQRpYQw/maxresdefault.jpg">
+<meta name="theme-color" content="#0B0C10">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F5C02E'/%3E%3Ctext x='32' y='44' font-family='Impact,Arial Black,sans-serif' font-size='30' text-anchor='middle' fill='%230B0C10'%3EiM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
+<style>
+:root{
+  --night:#0B0C10; --night-2:#14161C; --bone:#EFE7DA; --gold:#F5C02E; --gold-hover:#FFD65C;
+  --on-night:#EFE7DA; --soft-on-night:#CFC8BC; --quiet-on-night:#A8A39A; --rule-night:#2A2E37;
+  --ink:#15161A; --soft-ink:#3B3934; --quiet-ink:#5E584E; --rule-bone:#CFC5B5;
+  --display:'Anton',Impact,'Arial Narrow',sans-serif;
+  --serif:'Newsreader',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --h1:clamp(84px,12.5vw,168px); --h2:clamp(54px,8vw,96px); --h3:clamp(32px,4vw,48px);
+  --gutter:clamp(20px,4vw,32px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--night);color:var(--on-night);font-family:var(--sans);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img,video,iframe{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+.display{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.005em;margin:0}
+.h2{font-size:var(--h2);line-height:.92}
+.h3{font-size:var(--h3);line-height:1}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;font-weight:600;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:var(--sans)}
+.btn-gold{background:var(--gold);color:var(--night)}
+.btn-gold:hover{background:var(--gold-hover)}
+.btn-line{border:1px solid #4A4D55;color:var(--on-night)}
+.btn-line:hover{border-color:var(--on-night)}
+.btn-dark{background:var(--night);color:var(--gold)}
+.tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+.tag-box{border:1px solid currentColor;padding:4px 8px}
+.section{padding:clamp(72px,10vw,112px) 0}
+.section-head{display:flex;flex-wrap:wrap;gap:20px 40px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(32px,5vw,44px)}
+.section-head p{margin:0;max-width:440px;color:var(--soft-on-night)}
+.bone{background:var(--bone);color:var(--ink)}
+.bone .section-head p{color:var(--soft-ink)}
+.gold{background:var(--gold);color:var(--night)}
+.gold .section-head p{color:var(--night)}
+
+/* preview bar */
+.preview-bar{background:var(--gold);color:var(--night);font-size:13px;line-height:1.4;text-align:center;padding:8px var(--gutter)}
+.preview-bar strong{font-weight:600}
+
+/* header */
+.site-header{position:sticky;top:0;z-index:20;background:rgba(11,12,16,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid #23262E}
+.header-inner{display:flex;align-items:center;gap:24px;min-height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand-mark{width:40px;height:40px;background:var(--gold);color:var(--night);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:18px}
+.brand-name{font-family:var(--display);font-size:18px;letter-spacing:.04em}
+.nav{margin-left:auto;display:flex;align-items:center;gap:26px;font-size:14px;font-weight:500}
+.nav a{text-decoration:none}
+.nav a:hover{color:var(--gold)}
+.nav .btn{min-height:44px;padding:0 18px;font-size:14px}
+.menu{display:none;margin-left:auto;position:relative}
+.menu summary{list-style:none;width:44px;height:44px;border:1px solid #3A3D45;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.menu summary::-webkit-details-marker{display:none}
+.menu-panel{position:absolute;right:0;top:54px;width:min(300px,calc(100vw - 2*var(--gutter)));background:var(--night);border:1px solid #2A2E37;padding:8px 20px 20px;display:flex;flex-direction:column}
+.menu-panel a{font-family:var(--display);font-size:22px;text-transform:uppercase;text-decoration:none;padding:12px 0;border-bottom:1px solid #23262E}
+.menu-panel .btn{margin-top:16px;font-family:var(--sans);font-size:16px;text-transform:none;justify-content:center;border:0}
+@media (max-width:960px){.nav{display:none}.menu{display:block}}
+
+/* hero */
+.hero{background:var(--night);padding:clamp(40px,6vw,80px) 0 clamp(64px,8vw,96px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);grid-template-areas:"copy story" "cta story";column-gap:clamp(32px,4vw,56px);row-gap:28px;align-items:end}
+.hero-copy{grid-area:copy}
+.hero-cta{grid-area:cta;align-self:start}
+.hero-story{grid-area:story;align-self:center}
+.hero h1{margin:0}
+.hero h1 .big{display:block;font-family:var(--display);font-weight:400;font-size:var(--h1);line-height:.86;color:var(--gold);text-transform:uppercase}
+.hero h1 .small{display:block;margin-top:10px;font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(28px,3.4vw,44px);line-height:1.12;text-wrap:balance}
+.hero-lead{margin:22px 0 0;font-size:clamp(17px,1.6vw,20px);color:var(--soft-on-night);max-width:440px}
+.hero-cta .row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-cta .note{margin:14px 0 0;font-size:14px;color:var(--quiet-on-night)}
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "story" "cta"}
+  .hero-cta .btn{flex:1 1 100%;justify-content:space-between}
+}
+
+/* story video */
+.story{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}
+.story-play{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer;color:var(--on-night);text-align:left}
+.story-play video,.story-play img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.story-play::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,12,16,.78),rgba(11,12,16,0) 55%)}
+.story-badge{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:clamp(68px,9vw,96px);height:clamp(68px,9vw,96px);border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;transition:transform .2s ease}
+.story-play:hover .story-badge{transform:translate(-50%,-50%) scale(1.06)}
+.story-badge svg{width:34%;height:34%;margin-left:6%}
+.story-caption{position:absolute;z-index:1;left:clamp(14px,2vw,24px);right:clamp(14px,2vw,24px);bottom:clamp(12px,2vw,20px);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px}
+.story-caption .display{font-size:clamp(22px,2.6vw,34px);line-height:1}
+.story-caption span:last-child{font-size:13px;color:var(--soft-on-night)}
+.story iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.story-sub{margin:12px 0 0;font-size:14px;color:var(--quiet-on-night)}
+
+/* about */
+.about{border-top:1px solid #1C1F27}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(32px,5vw,56px)}
+.about .serif{font-size:clamp(19px,1.8vw,22px);line-height:1.4;color:var(--soft-on-night);margin:24px 0 0}
+.about-body p{margin:0 0 18px;font-size:clamp(17px,1.5vw,18px);color:var(--soft-on-night)}
+.about-body strong{color:var(--on-night)}
+
+/* ways overview */
+.ways{border-top:1px solid #23262E}
+.way{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr) auto;gap:8px 32px;align-items:baseline;padding:24px 0;border-bottom:1px solid #343944;text-decoration:none}
+.ways-list{border-top:1px solid #343944}
+.way .h3{transition:color .15s}
+.way:hover .h3{color:var(--gold)}
+.way p{margin:0;color:var(--soft-on-night)}
+.way .depth{font-size:13px;color:var(--quiet-on-night);white-space:nowrap}
+@media (max-width:760px){.way{grid-template-columns:minmax(0,1fr) auto}.way p{grid-column:1 / -1;grid-row:2}}
+
+/* item rows */
+.rows{border-top:1px solid #343944}
+.bone .rows{border-color:var(--rule-bone)}
+.gold .rows{border-color:var(--night)}
+.item{display:flex;flex-direction:column;gap:6px;padding:20px 0;border-bottom:1px solid #343944;text-decoration:none}
+.bone .item{border-color:var(--rule-bone)}
+.gold .item{border-color:var(--night)}
+.item-top{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.item-name{font-size:20px;font-weight:600}
+a.item:hover .item-name{text-decoration:underline;text-underline-offset:4px}
+.item .tag{color:var(--quiet-on-night)}
+.bone .item .tag{color:var(--quiet-ink)}
+.gold .item .tag{color:var(--night)}
+.item p{margin:0;font-size:15px;color:#B9B5AE}
+.bone .item p{color:var(--soft-ink)}
+.gold .item p{color:var(--night)}
+
+/* read & listen */
+.split{display:flex;flex-wrap:wrap;gap:clamp(32px,4vw,48px);align-items:stretch}
+.split > *{flex:1 1 440px;min-width:0}
+.feature{background:var(--gold);color:var(--night);padding:clamp(28px,4vw,40px);display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.feature p{margin:0;font-size:18px}
+.feature .small{font-size:14px}
+
+/* gather */
+.six33-head{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between;margin-bottom:16px}
+.six33-head .title{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.six33-head .tag{color:var(--soft-on-night)}
+.six33-lead{max-width:660px;margin:0 0 24px;color:var(--soft-on-night)}
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:40px}
+@media (max-width:860px){.strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.shot{margin:0;display:flex;flex-direction:column;gap:10px}
+.shot-box{aspect-ratio:3/4;border:1px dashed #3A3D45;background:#14161C;padding:14px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px}
+.shot-box .tag{color:var(--gold);font-size:11px}
+.shot-box span:last-child{font-size:13px;line-height:1.4;color:var(--quiet-on-night)}
+.shot figcaption{font-size:13px;font-weight:600;letter-spacing:.1em;color:var(--quiet-on-night);text-transform:uppercase}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));column-gap:48px}
+.cols.rows .item:first-child{border-top:0}
+
+/* pillars */
+.shelf{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
+@media (max-width:1060px){.shelf{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:620px){.shelf{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cover{aspect-ratio:612/792;background:var(--night);color:var(--on-night);padding:16px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;transition:transform .15s}
+.cover:hover{transform:translateY(-4px)}
+.cover .num{font-family:var(--display);font-size:15px;color:var(--gold)}
+.cover .kicker{display:block;font-size:10px;font-weight:600;letter-spacing:.2em;color:var(--quiet-on-night)}
+.cover .word{display:block;font-family:var(--display);font-size:clamp(22px,2vw,26px);line-height:1;text-transform:uppercase;margin-top:4px}
+.cover .dl{display:block;font-size:12px;color:var(--soft-on-night);margin-top:10px}
+.shelf-note{margin:28px 0 0;font-size:15px;color:var(--soft-ink)}
+
+/* pastor d */
+.pastor{border-top:1px solid #D4CABA}
+.pastor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:clamp(32px,5vw,56px);align-items:start}
+.pastor-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%}
+.pastor .quote{font-size:clamp(22px,2.2vw,27px);line-height:1.35;margin:22px 0 0;color:#2A2A2A}
+.pastor .bio{margin:22px 0 0;color:var(--soft-ink);max-width:560px}
+.pastor .rows{margin-top:28px}
+.story-link{display:inline-flex;align-items:center;gap:10px;margin-top:24px;font-weight:600;text-decoration:none}
+.story-link .dot{width:30px;height:30px;border-radius:50%;background:var(--ink);display:flex;align-items:center;justify-content:center}
+.proof{display:flex;flex-wrap:wrap;gap:32px;margin-top:clamp(48px,6vw,64px)}
+.proof blockquote{margin:0;font-size:clamp(24px,2.6vw,32px);line-height:1.3}
+.proof .testimonial{flex:2 1 520px;min-width:0;border-top:3px solid var(--ink);padding-top:24px;margin:0;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.proof figcaption{font-size:14px;font-weight:600;letter-spacing:.06em}
+.proof .pic{flex:1 1 260px;min-width:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.proof .pic.wide{flex:1 1 360px}
+.proof .pic img{width:100%;height:280px;object-fit:cover}
+.proof .pic figcaption{font-size:13px;font-weight:400;letter-spacing:0;color:var(--quiet-ink)}
+
+/* give + close */
+.give .tier{display:flex;gap:8px;margin-top:4px}
+.give .tier a{flex:1 1 0;min-height:48px;display:flex;align-items:center;justify-content:center;border:1px solid var(--night);font-weight:600;text-decoration:none}
+.give .tier a.pick{background:var(--night);color:var(--gold)}
+.closing{margin-top:clamp(48px,6vw,64px);max-width:980px}
+.closing .display{font-size:var(--h2);line-height:.92}
+.closing p{margin:16px 0 0;font-size:18px}
+.closing .serif{font-size:24px}
+
+/* footer */
+.site-footer{background:var(--gold);color:var(--night);border-top:1px solid var(--night);padding:48px 0 40px}
+.sitemap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:28px;font-size:14px;line-height:1.9}
+.sitemap div{display:flex;flex-direction:column}
+.sitemap strong{font-size:13px;letter-spacing:.08em}
+.sitemap a{text-underline-offset:3px}
+.legal{margin:36px 0 0;font-size:13px}
+</style>
+</head>
+<body>
+
+<div class="preview-bar"><strong>Design preview for Pastor D.</strong> Not the live site. Grey dashed boxes mark photos still to be taken.</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="Incredible Man home"><span class="brand-mark">iM</span><span class="brand-name">INCREDIBLE MAN</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#read">Read &amp; Listen</a>
+      <a href="#gather">Gather</a>
+      <a href="#pillars">The 7 Pillars</a>
+      <a href="#pastor">With Pastor D</a>
+      <a href="#give">Give &amp; Serve</a>
+      <a class="btn btn-gold" href="#read">Subscribe</a>
+    </nav>
+    <details class="menu">
+      <summary aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></summary>
+      <div class="menu-panel">
+        <a href="#read">Read &amp; Listen</a>
+        <a href="#gather">Gather</a>
+        <a href="#pillars">The 7 Pillars</a>
+        <a href="#pastor">With Pastor D</a>
+        <a href="#give">Give &amp; Serve</a>
+        <a class="btn btn-gold" href="#read">Subscribe to the Tuesday Email</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1><span class="big">Awaken</span><span class="small">the man God created you to be.</span></h1>
+        <p class="hero-lead">You were made to walk in power, purpose, and freedom.</p>
+      </div>
+      <div class="hero-story">
+        <div class="story" id="story">
+          <button class="story-play" type="button" data-youtube="2KZJzQRpYQw" aria-label="Play Dustin's story video">
+            <video autoplay muted loop playsinline preload="metadata" poster="https://i.ytimg.com/vi/2KZJzQRpYQw/maxresdefault.jpg" aria-hidden="true">
+              <source src="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe%2F689314b4449b0b548880199a_meet-dustin-transcode.mp4" type="video/mp4">
+              <source src="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe%2F689314b4449b0b548880199a_meet-dustin-transcode.webm" type="video/webm">
+            </video>
+            <span class="story-badge" aria-hidden="true"><svg viewBox="0 0 12 12"><path d="M2.5 1.2v9.6l8-4.8z" fill="#0B0C10"/></svg></span>
+            <span class="story-caption"><span class="display">Watch my story</span><span>Pastor Dustin Sample</span></span>
+          </button>
+        </div>
+        <p class="story-sub">A short video testimony from founder Dustin Sample sharing the journey behind Incredible Man and why it exists.</p>
+      </div>
+      <div class="hero-cta">
+        <div class="row">
+          <a class="btn btn-gold" href="#ways">Explore Incredible Man <span aria-hidden="true">→</span></a>
+          <a class="btn btn-line" href="#read">Get the Tuesday Email</a>
+        </div>
+        <p class="note">Real resources for men, free. And it’s going to stay that way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2 class="display h2">Masculinity is not toxic. Passivity is.</h2>
+        <p class="serif">The word incredible comes from the Latin <em>incredibilis</em>, “not believable.” It describes a man who lives differently: set apart, grounded, and unwavering.</p>
+      </div>
+      <div class="about-body">
+        <p><strong>Incredible Man isn’t a brand. It’s a rescue mission.</strong> In a world confused about manhood, we’re calling men back to God’s original design.</p>
+        <p>This movement is for men who want to rise above cultural confusion, relational compromise, and spiritual passivity. It’s for those ready to live as protectors, providers, fathers, brothers, and leaders, not in their own strength, but by the Spirit of God.</p>
+        <p>We’re here to encourage you to become everything Jesus died for you to be, and to do everything He died for you to do. You are not alone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section ways" id="ways" aria-labelledby="ways-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h2" id="ways-title">Open the door.<br>Let the light in.</h2>
+        <p>Whether you’re just starting or looking to go deeper, there’s a place for you. Go at your own depth.</p>
+      </div>
+      <div class="ways-list">
+        <a class="way" href="#read"><span class="display h3">Read &amp; Listen</span><p>Weekly emails, sermons, a five-minute scorecard, and the podcast and book to come.</p><span class="depth">On your own time →</span></a>
+        <a class="way" href="#gather"><span class="display h3">Gather</span><p>633 Men on Saturday mornings, men’s nights around the fire, and the first IMAN Retreat.</p><span class="depth">With other men →</span></a>
+        <a class="way" href="#pillars"><span class="display h3">The 7 Pillars</span><p>The framework behind it all, with a free field guide for each pillar.</p><span class="depth">Browse by topic →</span></a>
+        <a class="way" href="#pastor"><span class="display h3">With Pastor D</span><p>His story, one-on-one coaching and Life Plan, and bringing him to speak.</p><span class="depth">One-on-one →</span></a>
+        <a class="way" href="#give"><span class="display h3">Give &amp; Serve</span><p>Become a monthly partner, lead a group, or bring a buddy.</p><span class="depth">Carry it with us →</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="read" style="border-top:1px solid #23262E" aria-labelledby="read-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h2" id="read-title">Read &amp; Listen</h2>
+        <p>You don’t need more noise. You need truth.</p>
+      </div>
+      <div class="split">
+        <div class="feature">
+          <span class="tag tag-box">Every Tuesday · Free</span>
+          <h3 class="display h3">The IMAN Email</h3>
+          <p>A word for men who are done coasting. Start your week with a challenge, scripture, and encouragement to keep you focused and grounded.</p>
+          <a class="btn btn-dark" href="https://incredibleman.kit.com/subscribe" target="_blank" rel="noopener">Subscribe free <span aria-hidden="true">↗</span></a>
+          <p class="small"><a href="https://newsletter.incredibleman.org/" target="_blank" rel="noopener">Read past issues</a></p>
+        </div>
+        <div class="rows">
+          <a class="item" href="https://guide.dustindsample.com/scorecard" target="_blank" rel="noopener"><span class="item-top"><span class="item-name">The Honest Scorecard ↗</span><span class="tag">5 min</span></span><p>Eight questions, five minutes, one honest look at where you really are with God, at home and in your work.</p></a>
+          <a class="item" href="https://www.incredibleman.org/sermons-messages" target="_blank" rel="noopener"><span class="item-top"><span class="item-name">Sermons &amp; Messages ↗</span><span class="tag">Anytime</span></span><p>Hear Dustin preach, from Awaken to Lose Your Life to Find It.</p></a>
+          <div class="item"><span class="item-top"><span class="item-name">The Podcast</span><span class="tag">Coming soon</span></span><p>Tuesday readers hear first.</p></div>
+          <div class="item"><span class="item-top"><span class="item-name">The IMAN Book</span><span class="tag">In editing</span></span><p>A book about who God created men to be. The draft is finished.</p></div>
+          <a class="item" href="https://guide.dustindsample.com/" target="_blank" rel="noopener"><span class="item-top"><span class="item-name">Life, Leadership &amp; Transformation ↗</span><span class="tag">Every Monday</span></span><p>A separate email from Dustin’s coaching practice, for men doing the work of coaching or a Life Plan.</p></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gather" style="border-top:1px solid #23262E" aria-labelledby="gather-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h2" id="gather-title">Gather</h2>
+        <p>We weren’t built to do this alone. Every man needs guys around him who will call him up, back him up, and tell him the truth.</p>
+      </div>
+      <div class="six33-head">
+        <div class="title"><h3 class="display h3">633 Men</h3><span class="tag tag-box">Saturdays · 6:33 AM</span></div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a class="btn btn-gold" href="mailto:dustin@incredibleman.org?subject=633%20Men">Find a group</a>
+          <a class="btn btn-line" href="mailto:dustin@incredibleman.org?subject=Starting%20a%20633%20Men%20group">Start one where you live</a>
+        </div>
+      </div>
+      <p class="six33-lead">A workout, a devotion and real conversation. Any man, anywhere, can find a group and join. You never have to say a word. Plenty of men just listen.</p>
+      <div class="strip">
+        <figure class="shot"><div class="shot-box"><span class="tag">Photo to come</span><span>The workout on wet grass at first light.</span></div><figcaption>6:33 · The workout</figcaption></figure>
+        <figure class="shot"><div class="shot-box"><span class="tag">Photo to come</span><span>Bibles open on a tailgate, one man reading aloud.</span></div><figcaption>The devotion</figcaption></figure>
+        <figure class="shot"><div class="shot-box"><span class="tag">Photo to come</span><span>Two men, heads bowed, a hand on a shoulder.</span></div><figcaption>Prayer in pairs</figcaption></figure>
+        <figure class="shot"><div class="shot-box"><span class="tag">Photo to come</span><span>Men on a stone wall with coffee, talking.</span></div><figcaption>Real conversation</figcaption></figure>
+      </div>
+      <div class="cols rows">
+        <div class="item"><span class="item-top"><span class="item-name">Men’s Nights</span><span class="tag">Seasonal</span></span><p>Good food, a real testimony from a real man, then the fire pit. Bring a buddy.</p></div>
+        <div class="item"><span class="item-top"><span class="item-name">The IMAN Retreat</span><span class="tag">2027</span></span><p>The first IMAN Retreat. Details coming.</p></div>
+        <div class="item"><span class="item-top"><span class="item-name">Small Group Studies</span><span class="tag">Coming</span></span><p>Study materials so any man can lead other men.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bone" id="pillars" aria-labelledby="pillars-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h2" id="pillars-title">The 7 Pillars</h2>
+        <p>Incredible Man began when God gave me seven simple pillars. As I lived them out, they reshaped my purpose and identity. Now, we help men return to God’s design and walk it out together.</p>
+      </div>
+      <div class="shelf">
+        <a class="cover" href="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe/6aca1dec510c28d044bf10f8_Incredible_Relationship_with_God.pdf" target="_blank" rel="noopener"><span class="num">01</span><span><span class="kicker">INCREDIBLE</span><span class="word">Relationship with God</span><span class="dl">Field guide ↓</span></span></a>
+        <a class="cover" href="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe/6a211ddcfd50ae6e8f8e2e16_Incredible_Husband.pdf" target="_blank" rel="noopener"><span class="num">02</span><span><span class="kicker">INCREDIBLE</span><span class="word">Husband</span><span class="dl">Field guide ↓</span></span></a>
+        <a class="cover" href="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe/6a211d1349647b450a66067b_Incredible_Father.pdf" target="_blank" rel="noopener"><span class="num">03</span><span><span class="kicker">INCREDIBLE</span><span class="word">Father</span><span class="dl">Field guide ↓</span></span></a>
+        <a class="cover" href="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe/6a79139b73d53acae1f1ec61_IncredibleProviderProtector_Compressed.pdf" target="_blank" rel="noopener"><span class="num">04</span><span><span class="kicker">INCREDIBLE</span><span class="word">Provider &amp; Protector</span><span class="dl">Field guide ↓</span></span></a>
+        <a class="cover" href="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe/6aca146c74fb65d4356e9dfa_Incredible_Rest.pdf" target="_blank" rel="noopener"><span class="num">05</span><span><span class="kicker">INCREDIBLE</span><span class="word">Rest</span><span class="dl">Field guide ↓</span></span></a>
+        <a class="cover" href="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe/6aca146cb9eb00129c04543e_Incredible_Health.pdf" target="_blank" rel="noopener"><span class="num">06</span><span><span class="kicker">INCREDIBLE</span><span class="word">Health</span><span class="dl">Field guide ↓</span></span></a>
+        <a class="cover" href="https://cdn.prod.website-files.com/6882484fc5546626cf85a8fe/6aca146c48b13a6f7d3ee305_Incredible_Fun.pdf" target="_blank" rel="noopener"><span class="num">07</span><span><span class="kicker">INCREDIBLE</span><span class="word">Fun</span><span class="dl">Field guide ↓</span></span></a>
+      </div>
+      <p class="shelf-note">Each guide is free. In the full site, each pillar gets its own page with its guide, every IMAN email on that pillar, and related sermons.</p>
+    </div>
+  </section>
+
+  <section class="section bone pastor" id="pastor" aria-labelledby="pastor-title">
+    <div class="wrap">
+      <div class="pastor-grid">
+        <img class="pastor-photo" src="assets/dustin-portrait.jpg" alt="Pastor Dustin Sample smiling, standing in a field" loading="lazy">
+        <div>
+          <h2 class="display h2" id="pastor-title">With Pastor D</h2>
+          <p class="serif quote">“I exist to stir the hearts of men toward a holy collision with God, to awaken them to their divine calling and purpose.”</p>
+          <p class="bio">Father, husband, brother, son. I wasn’t always the man I am today. Like many of you I struggled with identity, purpose, and what it truly means to be a godly man in today’s world. This isn’t about perfection. It’s about progression, community, and walking in the identity God designed for us.</p>
+          <a class="story-link" href="#story"><span class="dot" aria-hidden="true"><svg width="11" height="11" viewBox="0 0 12 12"><path d="M2.5 1.2v9.6l8-4.8z" fill="#F5C02E"/></svg></span>Watch my story</a>
+          <div class="rows">
+            <a class="item" href="https://dustindsample.com" target="_blank" rel="noopener"><span class="item-top"><span class="item-name">Coaching &amp; Life Plan ↗</span><span class="tag">One-on-one</span></span><p>Six months of coaching, or two days to step back and plan your next season. Through Dustin’s practice at dustindsample.com.</p></a>
+            <a class="item" href="mailto:dustin@incredibleman.org?subject=Speaking%20request"><span class="item-top"><span class="item-name">Speaking &amp; Events</span><span class="tag">For your church or group</span></span><p>Over a decade of experience in men’s ministry, biblical counseling, and leadership development.</p></a>
+          </div>
+        </div>
+      </div>
+      <div class="proof">
+        <figure class="testimonial">
+          <blockquote class="serif">“Dustin is the real deal. He doesn’t just talk about being a man of God. He lives it.”</blockquote>
+          <figcaption>MIKE FIASCONE</figcaption>
+        </figure>
+        <figure class="pic"><img src="assets/dustin-exercising.jpg" alt="Dustin smiling mid-workout on gymnastic rings" loading="lazy" style="object-position:center 25%"></figure>
+        <figure class="pic wide"><img src="assets/dustin-praying.jpg" alt="Dustin praying over students at a school in Africa" loading="lazy" style="object-position:center 35%"><figcaption>Missions that reach men who need it most.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section gold give" id="give" aria-labelledby="give-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="display h2" id="give-title">Give &amp; Serve</h2>
+        <p>IMAN exists to give men real resources for free, and it’s going to stay that way. Every level fuels the vision.</p>
+      </div>
+      <div class="cols rows">
+        <div class="item">
+          <span class="item-top"><span class="item-name">Become a monthly partner</span><span class="tag">Monthly</span></span>
+          <div class="tier">
+            <a href="https://www.zeffy.com/en-US/donation-form/fuel-the-vision-of-iman" target="_blank" rel="noopener">$25</a>
+            <a class="pick" href="https://www.zeffy.com/en-US/donation-form/fuel-the-vision-of-iman" target="_blank" rel="noopener">$50</a>
+            <a href="https://www.zeffy.com/en-US/donation-form/fuel-the-vision-of-iman" target="_blank" rel="noopener">$100</a>
+          </div>
+          <p><a href="https://www.zeffy.com/en-US/donation-form/fuel-the-vision-of-iman" target="_blank" rel="noopener">Or give a one-time gift</a></p>
+        </div>
+        <a class="item" href="mailto:dustin@incredibleman.org?subject=Leading%20a%20633%20Men%20group"><span class="item-top"><span class="item-name">Lead a 633 Men group</span><span class="tag">Weekly</span></span><p>Start a group where you live, with study materials so any man can lead other men.</p></a>
+        <div class="item"><span class="item-top"><span class="item-name">Bring a buddy</span><span class="tag">Today</span></span><p>Text one guy and bring him with you. Send him the Tuesday email or this Saturday’s group.</p></div>
+      </div>
+      <div class="closing">
+        <p class="display">The world doesn’t need more men performing. It needs more men surrendered.</p>
+        <p>Let’s rebuild a generation, one pillar at a time.</p>
+        <p class="serif">With you in the fight, Pastor D</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav class="sitemap" aria-label="Site map">
+      <div><strong>READ &amp; LISTEN</strong><a href="https://incredibleman.kit.com/subscribe" target="_blank" rel="noopener">Tuesday IMAN Email</a><a href="https://newsletter.incredibleman.org/" target="_blank" rel="noopener">Email archive</a><a href="https://guide.dustindsample.com/scorecard" target="_blank" rel="noopener">Honest Scorecard</a><a href="https://www.incredibleman.org/sermons-messages" target="_blank" rel="noopener">Sermons &amp; Messages</a><a href="https://guide.dustindsample.com/" target="_blank" rel="noopener">Monday email ↗</a></div>
+      <div><strong>GATHER</strong><a href="#gather">633 Men</a><a href="#gather">Men’s Nights</a><a href="#gather">IMAN Retreat</a></div>
+      <div><strong>THE 7 PILLARS</strong><a href="#pillars">All pillars</a><a href="#pillars">Field guides</a></div>
+      <div><strong>WITH PASTOR D</strong><a href="#story">His story</a><a href="https://dustindsample.com" target="_blank" rel="noopener">Coaching &amp; Life Plan ↗</a><a href="mailto:dustin@incredibleman.org?subject=Speaking%20request">Speaking &amp; Events</a></div>
+      <div><strong>GIVE &amp; SERVE</strong><a href="https://www.zeffy.com/en-US/donation-form/fuel-the-vision-of-iman" target="_blank" rel="noopener">Donate</a><a href="mailto:dustin@incredibleman.org?subject=Leading%20a%20633%20Men%20group">Lead a group</a><a href="https://www.incredibleman.org/#letsconnect" target="_blank" rel="noopener">Prayer request</a><a href="mailto:dustin@incredibleman.org">dustin@incredibleman.org</a></div>
+    </nav>
+    <p class="legal">Incredible Man is a 501(c)(3) nonprofit dedicated to helping men become who God created them to be. Spicewood, Texas.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.querySelector('.story-play');
+  if (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-youtube');
+      var frame = document.createElement('iframe');
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&playsinline=1';
+      frame.title = "Dustin's story";
+      frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      frame.allowFullscreen = true;
+      btn.parentNode.replaceChild(frame, btn);
+    });
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var v = btn.querySelector('video');
+      if (v) { v.removeAttribute('autoplay'); v.pause(); }
+    }
+  }
+  var story = document.querySelector('.story-link');
+  if (story && btn) {
+    story.addEventListener('click', function () { setTimeout(function () { var b = document.querySelector('.story-play'); if (b) b.focus(); }, 500); });
+  }
+  document.querySelectorAll('.menu-panel a').forEach(function (a) {
+    a.addEventListener('click', function () { var d = a.closest('details'); if (d) d.removeAttribute('open'); });
+  });
+})();
+</script>
+</body>
+</html>
