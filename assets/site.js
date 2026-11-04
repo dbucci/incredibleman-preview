@@ -77,7 +77,8 @@
 // Share this week's email: native share sheet on phones, otherwise a text/email fallback
 (function () {
   document.querySelectorAll('[data-share]').forEach(function (btn) {
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
       var url = btn.getAttribute('data-share');
       var text = btn.getAttribute('data-share-text') || '';
       if (navigator.share) {
