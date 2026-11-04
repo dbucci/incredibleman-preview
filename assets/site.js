@@ -73,3 +73,18 @@
     });
   });
 })();
+
+// Share this week's email: native share sheet on phones, otherwise a text/email fallback
+(function () {
+  document.querySelectorAll('[data-share]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var url = btn.getAttribute('data-share');
+      var text = btn.getAttribute('data-share-text') || '';
+      if (navigator.share) {
+        navigator.share({ title: text, text: text, url: url }).catch(function () {});
+      } else {
+        window.location.href = 'mailto:?subject=' + encodeURIComponent(text) + '&body=' + encodeURIComponent('Thought of you when I read this:\n\n' + url);
+      }
+    });
+  });
+})();

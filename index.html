@@ -7,7 +7,7 @@
 <title>Incredible Man · Design Preview</title>
 <meta name="description" content="A design preview of the Incredible Man homepage, for Pastor Dustin Sample's review.">
 <meta property="og:title" content="Incredible Man · Design Preview">
-<meta property="og:description" content="Awaken the man God created you to be. Join your brothers at 6:33 Men.">
+<meta property="og:description" content="For Christian men who are done coasting. Every Tuesday, one honest word from Pastor D.">
 <meta property="og:image" content="https://i.ytimg.com/vi/2KZJzQRpYQw/maxresdefault.jpg">
 <meta name="theme-color" content="#0B0C10">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F5C02E'/%3E%3Ctext x='32' y='44' font-family='Impact,Arial Black,sans-serif' font-size='30' text-anchor='middle' fill='%230B0C10'%3EiM%3C/text%3E%3C/svg%3E">
@@ -26,6 +26,15 @@
 .hero h1 .big{font-family:var(--display);font-weight:400;font-size:var(--h1);line-height:.86;color:var(--gold);text-transform:uppercase}
 .hero h1 .small{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(26px,3.4vw,48px);line-height:1.1;text-wrap:balance}
 .hero-lead{margin:0;max-width:560px;font-size:clamp(17px,1.6vw,20px);color:var(--soft-on-night)}
+.hero-signup{margin:0;display:flex;flex-direction:column;gap:8px;max-width:600px}
+.hero-signup label{font-size:14px;font-weight:600}
+.hero-signup-row{display:flex;flex-wrap:wrap;gap:8px}
+.hero-signup-row .input{flex:1 1 260px;min-width:0;background:rgba(11,12,16,.85)}
+.hero-signup-row .btn{flex:0 0 auto}
+.hero-signup .form-note{color:var(--soft-on-night);font-size:14px}
+.hero-signup .preview-note{color:var(--quiet-on-night)}
+.hero-secondary{align-self:flex-start;font-weight:600;color:var(--gold)}
+@media (max-width:700px){.hero-signup-row .btn{flex:1 1 100%}}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}
 .btn-join{flex-direction:column;align-items:flex-start;gap:4px;padding:14px 28px;font-size:17px}
 .btn-join .when{font-size:12px;font-weight:600;letter-spacing:.08em}
@@ -35,7 +44,7 @@
 .hero-notes{display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--muted-on-night)}
 .hero-notes p{margin:0}
 .hero-notes a{color:var(--gold);font-weight:600}
-.why{border-top:1px solid var(--rule-night);padding-top:22px;margin-top:6px;font-size:15px;color:var(--muted-on-night);max-width:900px}
+.why{border-top:1px solid var(--rule-night);padding-top:22px;margin:6px 0 0;font-size:15px;color:var(--muted-on-night);max-width:900px}
 .why em{font-family:var(--serif);font-size:17px;color:var(--soft-on-night)}
 @media (max-width:700px){
   .hero-media{bottom:auto;height:380px;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 55%,transparent 100%)}
@@ -173,7 +182,7 @@ a.item:hover .item-name{text-decoration:underline;text-underline-offset:4px}
         <a href="#free">Free Resources</a>
         <a href="#pastor">With Pastor D</a>
         <a href="#give">Give</a>
-        <a class="btn btn-gold" href="#join">Join the community</a>
+        <a class="btn btn-gold" href="#top">Get the Tuesday email</a>
       </nav>
       <details class="menu">
         <summary aria-label="Open menu"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14"/></svg></summary>
@@ -184,7 +193,7 @@ a.item:hover .item-name{text-decoration:underline;text-underline-offset:4px}
           <a href="#pastor">With Pastor D</a>
           <a href="#give">Give</a>
           <a class="small" href="#prayer">Prayer request</a>
-          <a class="btn btn-gold" href="#join">Join the community</a>
+          <a class="btn btn-gold" href="#top">Get the Tuesday email</a>
         </div>
       </details>
     </div>
@@ -201,16 +210,16 @@ a.item:hover .item-name{text-decoration:underline;text-underline-offset:4px}
     </div>
     <div class="wrap hero-inner">
       <h1><span class="big">Awaken</span><span class="small">the man God created you to be.</span></h1>
-      <p class="hero-lead">Every Saturday at 6:33 AM, men in Austin meet for a workout, a devotion and real conversation. We weren’t built to do this alone.</p>
-      <div class="hero-cta">
-        <a class="btn btn-gold btn-join" href="#join"><span class="stack">Join your brothers<span class="when">NEXT: <span data-next-saturday>SATURDAY</span> · 6:33 AM · [PARK], AUSTIN, TX</span></span><span class="arrow" aria-hidden="true">→</span></a>
-        <a class="btn btn-line btn-story" href="#story"><span class="dot" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12"><path d="M3 1.5v9l7.5-4.5z" fill="#0B0C10"/></svg></span>Watch Dustin’s story</a>
-      </div>
-      <div class="hero-notes">
-        <p>It’s free. Any fitness level. Show up at 6:33 AM with an open heart.</p>
-        <p>Want a group where you live? <a href="mailto:dustin@incredibleman.org?subject=Start%20a%206%3A33%20Men%20group">Start one</a></p>
-      </div>
-      <p class="why">Why 6:33? <em>“But seek first the kingdom of God and his righteousness, and all these things will be added to you.”</em> (Matthew 6:33)</p>
+      <p class="hero-lead">For Christian men who are done coasting. Every Tuesday, one honest word on faith, marriage, fatherhood, work, rest, health and fun.</p>
+      <form class="hero-signup" data-open="https://incredibleman.kit.com/subscribe" aria-label="Get the Tuesday email">
+        <label for="hero-email">Your email</label>
+        <div class="hero-signup-row">
+          <input class="input input-night" id="hero-email" type="email" autocomplete="email" placeholder="you@example.com">
+          <button class="btn btn-gold" type="submit">Get the Tuesday email</button>
+        </div>
+        <p class="form-note">One email, every Tuesday morning. Free, no catch. <span class="preview-note">Preview: opens the signup page.</span></p>
+      </form>
+      <a class="hero-secondary" href="#email">Or read this week’s email first →</a>
     </div>
   </section>
 
@@ -242,6 +251,7 @@ a.item:hover .item-name{text-decoration:underline;text-underline-offset:4px}
           <div class="field"><label for="join-name">First name</label><input class="input input-gold" id="join-name" name="first_name" autocomplete="given-name" required></div>
           <div class="field"><label for="join-phone">Phone</label><input class="input input-gold" id="join-phone" name="phone" type="tel" autocomplete="tel"></div>
           <button class="btn btn-dark" type="submit" style="font-size:17px">I’ll be there</button>
+          <p style="font-size:14px;font-weight:600;letter-spacing:.06em">NEXT: <span data-next-saturday>SATURDAY</span> · 6:33 AM · [PARK], AUSTIN, TX</p>
           <p style="font-size:14px">Invited by a friend? Tell him you’re in, and ask him to meet you there.</p>
           <p class="form-note">Preview: this form doesn’t send anything yet. It shows the confirmation page.</p>
         </form>
@@ -253,6 +263,10 @@ a.item:hover .item-name{text-decoration:underline;text-underline-offset:4px}
             <div class="row"><span class="name">What the morning is like</span><span class="desc">A workout, a devotion, prayer and real conversation. These men will hear you out, and they’ll have your back.</span></div>
             <div class="row"><span class="name">After</span><span class="desc">You’ll be added to the group chat. Next week, bring a buddy. We’ll be counting on you.</span></div>
           </div>
+          <div class="hero-notes">
+            <p>Want a group where you live? <a href="mailto:dustin@incredibleman.org?subject=Start%20a%206%3A33%20Men%20group">Start one</a></p>
+          </div>
+          <p class="why">Why 6:33? <em>“But seek first the kingdom of God and his righteousness, and all these things will be added to you.”</em> (Matthew 6:33)</p>
         </div>
       </div>
     </div>
@@ -267,13 +281,12 @@ a.item:hover .item-name{text-decoration:underline;text-underline-offset:4px}
         <p class="serif summary">One generation after Israel crossed the Jordan, the stones were still standing, but the kids had never heard the story. This week, build a stone: tell your kids, or a younger man, what God has done for you, in under two minutes.</p>
         <a href="https://incredibleman.kit.com/posts/iman-89-what-do-these-stones-mean" target="_blank" rel="noopener">Read the full email →</a>
       </article>
-      <form class="take" data-open="https://incredibleman.kit.com/subscribe" aria-label="Get the Tuesday email">
-        <h3 class="display" style="font-size:40px;line-height:1">Take it with you</h3>
-        <p style="color:var(--soft-on-night)">For men who are done coasting. Every Tuesday, one honest word on faith, marriage, fatherhood, work, rest, health and fun. Free, no catch.</p>
-        <div class="field"><label for="tuesday-email">Email address</label><input class="input input-night" id="tuesday-email" type="email" autocomplete="email" placeholder="you@example.com"></div>
-        <button class="btn btn-gold" type="submit">Get the Tuesday email</button>
-        <p class="form-note" style="color:var(--quiet-on-night)">One email a week. Unsubscribe anytime. Preview: opens the signup page.</p>
-      </form>
+      <div class="take">
+        <h3 class="display" style="font-size:40px;line-height:1">Know a man who needs this?</h3>
+        <p style="color:var(--soft-on-night)">Send him this week’s email.</p>
+        <button class="btn btn-gold" type="button" data-share="https://incredibleman.kit.com/posts/iman-89-what-do-these-stones-mean" data-share-text="IMAN #89 What Do These Stones Mean? from Pastor D">Share this email</button>
+        <a href="#top" style="font-size:15px;font-weight:600;color:var(--gold)">Get it every Tuesday →</a>
+      </div>
     </div>
   </section>
 
